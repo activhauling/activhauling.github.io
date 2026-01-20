@@ -1,1 +1,0 @@
-# activhauling.github.io
