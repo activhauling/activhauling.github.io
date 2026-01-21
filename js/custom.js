@@ -46,26 +46,16 @@ $(".testimonial-carousel").owlCarousel({
     margin: 25,
     autoplay: true,
     autoplayTimeout: 0,          // no pauses
-    autoplaySpeed: 6000,         // constant speed
-    smartSpeed: 6000,
+    autoplaySpeed: 7000,         // constant speed
+    smartSpeed: 7000,
     slideTransition: "linear",   // smooth continuous motion
     dots: false,
     nav: false,
+    autoWidth: true,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
     freeDrag: false,
-    responsive: {
-        0: {
-            items: 1
-        },
-        768: {
-            items: 2
-        },
-        1000: {
-            items: 3
-        }
-    }
 });
 
 
@@ -83,3 +73,4 @@ function myMap() {
         new google.maps.Map(mapEl, mapProp);
     }
 }
+
