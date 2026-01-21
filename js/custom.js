@@ -1,50 +1,47 @@
-// ==============================
-// Display current year in footer
-// ==============================
+// ===============================
+// Current Year
+// ===============================
 function getYear() {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    var yearEl = document.querySelector("#displayYear");
-    if (yearEl) {
-        yearEl.innerHTML = currentYear;
-    }
+  var currentDate = new Date();
+  document.querySelector("#displayYear").innerHTML = currentDate.getFullYear();
 }
-
 getYear();
 
 
-// ==============================
-// Generic Owl Carousel
-// (Used for sliders EXCEPT testimonials)
-// ==============================
-$(".owl-carousel").owlCarousel({
+// ===============================
+// TESTIMONIAL CAROUSEL (ONLY ONE)
+// ===============================
+$(document).ready(function () {
+  $(".testimonial-carousel").owlCarousel({
     loop: true,
-    margin: 20,
-    nav: true,
+    margin: 25,
     autoplay: true,
-    navText: [
-        '<i class="fa fa-long-arrow-left" aria-hidden="true"></i>',
-        '<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'
-    ],
-    autoplayHoverPause: true,
+    autoplayTimeout: 0,
+    autoplaySpeed: 6000,
+    smartSpeed: 6000,
+    slideTransition: 'linear',
+    dots: false,
+    nav: false,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    freeDrag: false,
     responsive: {
-        0: { items: 1 },
-        1000: { items: 2 }
+      0: { items: 1 },
+      768: { items: 2 },
+      1000: { items: 3 }
     }
+  });
 });
 
 
-// ==============================
-// Google Map
-// ==============================
+// ===============================
+// Google Map (SAFE)
+// ===============================
 function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18
-    };
-
-    var mapEl = document.getElementById("googleMap");
-    if (mapEl) {
-        new google.maps.Map(mapEl, mapProp);
-    }
+  var mapProp = {
+    center: new google.maps.LatLng(40.712775, -74.005973),
+    zoom: 18,
+  };
+  new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
