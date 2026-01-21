@@ -15,9 +15,9 @@ getYear();
 
 // ==============================
 // Generic Owl Carousel
-// (EXCLUDES testimonials)
+// (Used for sliders EXCEPT testimonials)
 // ==============================
-$(".owl-carousel").not(".testimonial-carousel").owlCarousel({
+$(".owl-carousel").owlCarousel({
     loop: true,
     margin: 20,
     nav: true,
@@ -28,34 +28,9 @@ $(".owl-carousel").not(".testimonial-carousel").owlCarousel({
     ],
     autoplayHoverPause: true,
     responsive: {
-        0: {
-            items: 1
-        },
-        1000: {
-            items: 2
-        }
+        0: { items: 1 },
+        1000: { items: 2 }
     }
-});
-
-
-// ==============================
-// Continuous Testimonial Carousel
-// ==============================
-$(".testimonial-carousel").owlCarousel({
-    loop: true,
-    margin: 25,
-    autoplay: true,
-    autoplayTimeout: 0,          // no pauses
-    autoplaySpeed: 7000,         // constant speed
-    smartSpeed: 7000,
-    slideTransition: "linear",   // smooth continuous motion
-    dots: false,
-    nav: false,
-    autoWidth: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    freeDrag: false,
 });
 
 
@@ -73,4 +48,3 @@ function myMap() {
         new google.maps.Map(mapEl, mapProp);
     }
 }
-
