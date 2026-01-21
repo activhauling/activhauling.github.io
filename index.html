@@ -591,25 +591,23 @@ ActivHauling is a registered “doing business as” (DBA) of ActivTruckin LLC.
   <script src="js/custom.js"></script>
   <!-- Live social proof -->
 <script>
-  fetch("https://ipapi.co/json/")
-    .then(response => response.json())
+  fetch("https://ipinfo.io/json")
+    .then(res => res.json())
     .then(data => {
-      const state = data.region || "your area";
-      const viewers = Math.floor(Math.random() * 6) + 7;
+      const state = data.region;
+
+      if (!state) return;
+
+      // believable range
+      const viewers = Math.floor(Math.random() * 4) + 9;
 
       const el = document.getElementById("liveViewers");
       if (el) {
         el.innerText = `👀 ${viewers} people viewing from ${state} right now`;
       }
-    })
-    .catch(() => {
-      const el = document.getElementById("liveViewers");
-      if (el) {
-        const viewers = Math.floor(Math.random() * 6) + 7;
-        el.innerText = `👀 ${viewers} people viewing this page right now`;
-      }
     });
 </script>
+
 
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
@@ -620,6 +618,7 @@ ActivHauling is a registered “doing business as” (DBA) of ActivTruckin LLC.
 
 
 </html>
+
 
 
 
