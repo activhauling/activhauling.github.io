@@ -28,7 +28,28 @@ $(".owl-carousel").owlCarousel({
 
 //    end owl carousel script 
 
-
+// NEW testimonial carousel(add) 
+$('.testimonial-carousel').owlCarousel({
+  loop: true,
+  margin: 30,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  smartSpeed: 800,
+  dots: false,
+  nav: false,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    1000: {
+      items: 3
+    }
+  }
+});
 
 /** google_map js **/
 function myMap() {
@@ -37,4 +58,5 @@ function myMap() {
         zoom: 18,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
 }
