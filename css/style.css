@@ -841,3 +841,8 @@ a:focus {
   color: #333;
   margin: 0;
 }
+
+.testimonial_item h6 span {
+  font-weight: normal;
+  color: #777;
+}
