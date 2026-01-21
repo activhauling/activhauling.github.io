@@ -240,3 +240,24 @@ a { text-decoration: none; }
     animation-duration: 90s;
   }
 }
+
+/* ============================
+   Fix tall testimonial cards
+   ============================ */
+
+.testimonial_section .testimonial_item {
+  height: auto !important;
+  min-height: 220px;
+  max-height: none;
+  display: block;
+}
+
+/* Ensure Owl doesn't stretch items */
+.testimonial_section .owl-item {
+  display: flex;
+  align-items: stretch;
+}
+
+.testimonial_section .owl-item .testimonial_item {
+  width: 100%;
+}
