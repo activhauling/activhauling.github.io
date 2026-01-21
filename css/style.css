@@ -229,3 +229,63 @@ a {
   height: auto;
   margin: 0 auto;
 }
+
+/* ==============================
+   Continuous Testimonial Marquee
+   ============================== */
+
+.testimonial-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.testimonial-track {
+  display: flex;
+  gap: 25px;
+  width: max-content;
+  animation: scrollTestimonials 45s linear infinite;
+}
+
+.testimonial_item {
+  width: 340px;
+  flex-shrink: 0;
+}
+
+/* Smooth infinite scroll */
+@keyframes scrollTestimonials {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover (optional but premium) */
+.testimonial-marquee:hover .testimonial-track {
+  animation-play-state: paused;
+}
+
+/* Fade edges (premium look) */
+.testimonial-marquee::before,
+.testimonial-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.testimonial-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #f8f9fa 0%, transparent 100%);
+}
+
+.testimonial-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #f8f9fa 0%, transparent 100%);
+}
