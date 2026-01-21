@@ -846,3 +846,14 @@ a:focus {
   font-weight: normal;
   color: #777;
 }
+
+/* Continuous testimonial marquee fix */
+.testimonial-carousel .owl-stage {
+  display: flex;
+  align-items: stretch;
+}
+
+.testimonial_item {
+  width: 360px;
+  flex-shrink: 0;
+}
