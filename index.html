@@ -43,9 +43,7 @@
       <div class="header_top">
         <div class="container-fluid ">
           <div class="header_top_content">
-            <a class="navbar-brand d-none d-lg-flex" href="index.html">
-  <img src="images/logo.png" alt="ActivHauling logo" style="height: 50px;">
-</a>
+            
 
             <div class="contact_nav">
               <a href="">
@@ -68,7 +66,7 @@
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand d-none d-lg-flex" href="index.html">
-  <img src="images/logo.png" alt="ActivHauling logo" style="height: 50px;">
+  <img src="images/logo.png" alt="ActivHauling logo" style="height: 120px;">
 </a>
 
 
@@ -77,28 +75,49 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-                </li>
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
-              </ul>
+              <ul class="navbar-nav">
+  <li class="nav-item active">
+    <a class="nav-link" href="index.html">Home</a>
+  </li>
+
+  <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle"
+     href="#"
+     id="servicesDropdown"
+     role="button"
+     data-toggle="dropdown"
+     aria-haspopup="true"
+     aria-expanded="false">
+    Services
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+    <a class="dropdown-item" href="dispatching.html">Dispatching - Trucking Services</a>
+    <a class="dropdown-item" href="factoring.html.html">Factoring Services</a>
+    <a class="dropdown-item" href="company-formation.html">Company Formation Services</a>
+    <a class="dropdown-item" href="back-office.html">Back Office Support</a>
+    <a class="dropdown-item" href="compliance.html">Compliance Assistance</a>
+  </div>
+</li>
+
+
+  <li class="nav-item">
+    <a class="nav-link" href="pricing.html">Pricing</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="faq.html">FAQ</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="about.html">About</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact Us</a>
+  </li>
+</ul>
+
             </div>
           </nav>
         </div>
@@ -127,16 +146,18 @@
                 <div class="col-md-9 col-lg-7 ">
                   <div class="detail-box">
                     <h1>
-                      Transport and <br>
+                      Back Office and <br>
                       Dispatch Service
                     </h1>
                     <p>
                       Connecting Drivers to Freight—Maximize Efficiency and Profitability with Every Mile!
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="signup.html" class="btn1">
                         Get Started Today
                       </a>
+
+                      <p id="liveViewers" style="margin-top:10px; font-size:14px; opacity:0.85;"></p>
                     </div>
                   </div>
                 </div>
@@ -149,16 +170,18 @@
                 <div class="col-md-9 col-lg-7 ">
                   <div class="detail-box">
                     <h1>
-                      Transport and <br>
-                      Dispatch Service
+                      Factoring and <br>
+                      Fuel Cards
                     </h1>
                     <p>
-                      Connecting Drivers to Freight—Maximize Efficiency and Profitability with Every Mile!
+                      We provide factoring and fuel card solutions that keep your cash flow strong and your fuel costs under control.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="signup.html" class="btn1">
                         Get Started Today
                       </a>
+                      
+                      <p id="liveViewers" style="margin-top:10px; font-size:14px; opacity:0.85;"></p>
                     </div>
                   </div>
                 </div>
@@ -171,16 +194,18 @@
                 <div class="col-md-9 col-lg-7 ">
                   <div class="detail-box">
                     <h1>
-                      Transport and <br>
-                      Dispatch Service
+                      Safety and <br>
+                      Compliance
                     </h1>
                     <p>
-                      Connecting Drivers to Freight—Maximize Efficiency and Profitability with Every Mile!
+                      We manage safety and compliance so your authority stays protected, your logs stay clean, and your trucks stay on the road without interruptions.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="signup.html" class="btn1">
                         Get Started Today
                       </a>
+
+                      <p id="liveViewers" style="margin-top:10px; font-size:14px; opacity:0.85;"></p>
                     </div>
                   </div>
                 </div>
@@ -209,7 +234,7 @@
             <p>
               ActivHauling is a full-service trucking support and dispatching company dedicated to helping owner-operators and carriers operate compliantly, profitably, and at scale. From MC authority setup and ELD compliance to expert dispatching, factoring assistance, and fleet growth strategies, we simplify operations so drivers can focus on what matters most—keeping their trucks moving and their businesses growing.
             </p>
-            <a href="">
+            <a href="service.html">
               Read More
             </a>
           </div>
@@ -227,77 +252,7 @@
 
   <!-- service section -->
 
-  <section class="service_section layout_padding">
-    <div class="service_container">
-      <div class="container ">
-        <div class="heading_container">
-          <h2>
-            Our Services
-          </h2>
-          <p>
-            We offer a wide range of services including but not limited to
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mx-auto ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s1.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  24/7 Dispatch and Back Office Support
-                </h5>
-                <p>
-                  We manage load booking, rate negotiation, and route planning on your behalf. Our goal is to keep your trucks moving consistently while maximizing your revenue per mile.
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mx-auto ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s2.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Driver Recruitment
-                </h5>
-                <p>
-                  We help carriers find reliable, qualified drivers that match their equipment and lanes. Our recruitment support reduces downtime and keeps your fleet staffed and productive.
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mx-auto ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s3.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Factoring
-                </h5>
-                <p>
-                  We connect you with trusted factoring partners so you get paid quickly and reliably. Faster cash flow means fewer financial headaches and smoother day-to-day operations.
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
   <!-- end service section -->
 
   <!-- contact section -->
@@ -556,14 +511,19 @@ ActivHauling is a registered “doing business as” (DBA) of ActivTruckin LLC.
   <!-- end info section -->
 
   <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        ActivTruckin, DBA ActivHauling
-      </p>
-    </div>
-  </footer>
+<footer class="footer_section">
+  <div class="container">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved By
+      ActivTruckin, DBA ActivHauling
+    </p>
+
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Service</a>
+    </p>
+  </div>
+</footer>
   <!-- footer section -->
 
   <!-- jQery -->
@@ -578,6 +538,26 @@ ActivHauling is a registered “doing business as” (DBA) of ActivTruckin LLC.
   </script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
+  <!-- Live social proof -->
+<script>
+  fetch("https://ipinfo.io/json")
+    .then(res => res.json())
+    .then(data => {
+      const state = data.region;
+
+      if (!state) return;
+
+      // believable range
+      const viewers = Math.floor(Math.random() * 4) + 9;
+
+      const el = document.getElementById("liveViewers");
+      if (el) {
+        el.innerText = `👀 ${viewers} people viewing from ${state} right now`;
+      }
+    });
+</script>
+
+
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
@@ -587,6 +567,18 @@ ActivHauling is a registered “doing business as” (DBA) of ActivTruckin LLC.
 
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
