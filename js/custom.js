@@ -1,25 +1,40 @@
-// ===============================
-// Current Year
-// ===============================
-(function () {
-  var el = document.querySelector("#displayYear");
-  if (el) {
-    el.innerHTML = new Date().getFullYear();
-  }
-})();
+// to get current year
+function getYear() {
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    document.querySelector("#displayYear").innerHTML = currentYear;
+}
+
+getYear();
 
 
-// ===============================
-// Google Map (safe guard)
-// ===============================
+//  owl carousel script
+$(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    autoplay: true,
+    navText: ['<i class="fa fa-long-arrow-left" aria-hidden="true"></i>', '<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'],
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        1000: {
+            items: 2
+        }
+    }
+});
+
+//    end owl carousel script 
+
+
+
+/** google_map js **/
 function myMap() {
-  var mapEl = document.getElementById("googleMap");
-  if (!mapEl || typeof google === "undefined") return;
-
-  var mapProp = {
-    center: new google.maps.LatLng(40.712775, -74.005973),
-    zoom: 18
-  };
-
-  new google.maps.Map(mapEl, mapProp);
+    var mapProp = {
+        center: new google.maps.LatLng(40.712775, -74.005973),
+        zoom: 18,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
