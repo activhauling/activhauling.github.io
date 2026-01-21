@@ -10,26 +10,21 @@ getYear();
 
 //  owl carousel script
 $(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 20,
-  autoplay: true,
-  autoplayTimeout: 0,          // KEY: no pauses
-  autoplaySpeed: 8000,         // controls scroll speed
-  smartSpeed: 8000,
-  slideTransition: "linear",   // KEY: continuous motion
-  dots: false,
-  nav: false,
-  mouseDrag: false,
-  touchDrag: false,
-  pullDrag: false,
-  freeDrag: false,
-  responsive: {
-    0: { items: 1 },
-    768: { items: 2 },
-    1000: { items: 3 }
-  }
+    loop: true,
+    margin: 20,
+    nav: true,
+    autoplay: true,
+    navText: ['<i class="fa fa-long-arrow-left" aria-hidden="true"></i>', '<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'],
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        1000: {
+            items: 2
+        }
+    }
 });
-
 
 //    end owl carousel script 
 
