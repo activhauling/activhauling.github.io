@@ -7,25 +7,33 @@ body {
   overflow-x: hidden;
 }
 
-/* =========================
+/* =====================
    Layout helpers
-   ========================= */
+   ===================== */
 
-.layout_padding { padding: 90px 0; }
-.layout_padding2 { padding: 75px 0; }
-.layout_padding2-top { padding-top: 75px; }
-.layout_padding2-bottom { padding-bottom: 75px; }
-.layout_padding-top { padding-top: 90px; }
-.layout_padding-bottom { padding-bottom: 90px; }
+.layout_padding {
+  padding: 90px 0;
+}
 
-/* =========================
+.layout_padding2 {
+  padding: 75px 0;
+}
+
+.layout_padding-top {
+  padding-top: 90px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 90px;
+}
+
+/* =====================
    Headings
-   ========================= */
+   ===================== */
 
 .heading_container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .heading_container h2 {
@@ -43,18 +51,25 @@ body {
   text-align: center;
 }
 
-/* =========================
+/* =====================
    Links & buttons
-   ========================= */
+   ===================== */
 
-a { text-decoration: none; }
-.btn { outline: none !important; box-shadow: none; }
+a {
+  text-decoration: none;
+}
 
-/* =========================
-   Header & Hero
-   ========================= */
+.btn {
+  outline: none !important;
+  box-shadow: none;
+}
+
+/* =====================
+   Hero & header
+   ===================== */
 
 .hero_area {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -76,12 +91,16 @@ a { text-decoration: none; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(39,48,63,.85), rgba(39,48,63,.7));
+  background: linear-gradient(
+    to bottom,
+    rgba(39, 48, 63, 0.85),
+    rgba(39, 48, 63, 0.7)
+  );
 }
 
-/* =========================
+/* =====================
    Slider
-   ========================= */
+   ===================== */
 
 .slider_section {
   flex: 1;
@@ -91,7 +110,7 @@ a { text-decoration: none; }
 }
 
 .slider_section .detail-box h1 {
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -100,30 +119,83 @@ a { text-decoration: none; }
 }
 
 .slider_section .detail-box a {
-  background: #ff7241;
-  color: #fff;
+  background-color: #ff7241;
+  color: #ffffff;
   padding: 10px 45px;
   margin-top: 15px;
+  display: inline-block;
 }
 
-/* =========================
-   Sections (about, service, contact)
-   ========================= */
-
-.about_section .detail-box a,
-.contact_section .form_container button,
-.info_section form button {
-  background: #ff7241;
-  color: #fff;
+.slider_section .detail-box a:hover {
+  background-color: #f43f00;
 }
+
+/* =====================
+   Services / About / Contact
+   ===================== */
 
 .service_section {
   background-color: #f9f8f7;
 }
 
-/* =========================
+.about_section .detail-box a,
+.contact_section .form_container button {
+  background-color: #ff7241;
+  color: #ffffff;
+}
+
+.about_section .detail-box a:hover,
+.contact_section .form_container button:hover {
+  background-color: #f43f00;
+}
+
+/* =====================
+   Testimonials (FIXED)
+   ===================== */
+
+.testimonial_section {
+  background-color: #f8f9fa;
+}
+
+/* IMPORTANT:
+   No flex, no forced height, no stretching */
+.testimonial_item {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Stars */
+.testimonial_item .stars {
+  color: #f4b400;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.testimonial_item p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Name */
+.testimonial_item h6 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.testimonial_item h6 span {
+  font-weight: 400;
+  color: #777;
+}
+
+/* =====================
    Footer
-   ========================= */
+   ===================== */
 
 .footer_section {
   background-color: #ffffff;
@@ -136,128 +208,6 @@ a { text-decoration: none; }
   margin: 0;
 }
 
-/* =====================================================
-   ✅ TESTIMONIALS — PREMIUM CONTINUOUS MARQUEE (FINAL)
-   ===================================================== */
-
-.testimonial_section {
-  background: #f8f9fa;
-  overflow: hidden;
-}
-
-/* Marquee container */
-.testimonial-marquee {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding: 40px 0;
-}
-
-/* Fade edges */
-.testimonial-marquee::before,
-.testimonial-marquee::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 140px;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.testimonial-marquee::before {
-  left: 0;
-  background: linear-gradient(to right, #f8f9fa 0%, rgba(248,249,250,0) 100%);
-}
-
-.testimonial-marquee::after {
-  right: 0;
-  background: linear-gradient(to left, #f8f9fa 0%, rgba(248,249,250,0) 100%);
-}
-
-/* Moving track */
-.testimonial-track {
-  display: flex;
-  gap: 25px;
-  width: max-content;
-  animation: testimonialScroll 70s linear infinite;
-}
-
-/* Individual card */
-.testimonial_item {
-  width: 360px;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-  flex-shrink: 0;
-}
-
-/* Stars */
-.testimonial_item .stars {
-  color: #f5b301;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-/* Text */
-.testimonial_item p {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-/* Name */
-.testimonial_item h6 {
-  font-weight: 700;
-  margin: 0;
-}
-
-.testimonial_item h6 span {
-  font-weight: 400;
-  color: #777;
-}
-
-/* Animation */
-@keyframes testimonialScroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-/* Pause on hover */
-.testimonial-marquee:hover .testimonial-track {
-  animation-play-state: paused;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .testimonial_item {
-    width: 300px;
-  }
-
-  .testimonial-track {
-    animation-duration: 90s;
-  }
-}
-
-/* ============================
-   Fix tall testimonial cards
-   ============================ */
-
-.testimonial_section .testimonial_item {
-  height: auto !important;
-  min-height: 220px;
-  max-height: none;
-  display: block;
-}
-
-/* Ensure Owl doesn't stretch items */
-.testimonial_section .owl-item {
-  display: flex;
-  align-items: stretch;
-}
-
-.testimonial_section .owl-item .testimonial_item {
-  width: 100%;
+.footer_section p a {
+  color: inherit;
 }
