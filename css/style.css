@@ -785,3 +785,30 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* =========================
+   Auto-running Testimonials
+   ========================= */
+
+.testimonial_section {
+  background: #f8f9fa;
+}
+
+.testimonial_item {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.testimonial_item p {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.testimonial_item h6 {
+  font-weight: 600;
+  color: #000;
+}
