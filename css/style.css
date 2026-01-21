@@ -211,3 +211,21 @@ a {
 .footer_section p a {
   color: inherit;
 }
+
+/* ===== FINAL OWL TESTIMONIAL FIX ===== */
+
+.testimonial-carousel .owl-stage {
+  display: flex !important;
+}
+
+.testimonial-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial_item {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
