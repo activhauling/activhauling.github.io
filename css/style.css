@@ -851,3 +851,52 @@ a:focus {
   border-bottom: 1px solid #eee;
 }
 
+/* Pricing Cards */
+
+.pricing-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+.pricing-card.featured {
+  border: 2px solid #ff7241;
+  transform: translateY(-10px);
+}
+
+.pricing-card h4 {
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.pricing-card ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 20px 0;
+}
+
+.pricing-card ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.pricing-card .price {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.pricing-card .badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e9f1ff;
+  color: #2c6bed;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
