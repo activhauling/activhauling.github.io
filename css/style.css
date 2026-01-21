@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 
-/* =======================
+/* =====================================================
    BASE
-   ======================= */
+   ===================================================== */
 
 body {
   font-family: "Roboto Condensed", sans-serif;
@@ -20,9 +20,9 @@ a {
   box-shadow: none !important;
 }
 
-/* =======================
+/* =====================================================
    LAYOUT HELPERS
-   ======================= */
+   ===================================================== */
 
 .layout_padding {
   padding: 90px 0;
@@ -36,9 +36,9 @@ a {
   padding-bottom: 90px;
 }
 
-/* =======================
+/* =====================================================
    HEADINGS
-   ======================= */
+   ===================================================== */
 
 .heading_container {
   display: flex;
@@ -61,9 +61,9 @@ a {
   text-align: center;
 }
 
-/* =======================
-   HERO
-   ======================= */
+/* =====================================================
+   HERO / HEADER
+   ===================================================== */
 
 .hero_area {
   position: relative;
@@ -95,9 +95,9 @@ a {
   );
 }
 
-/* =======================
+/* =====================================================
    SLIDER
-   ======================= */
+   ===================================================== */
 
 .slider_section {
   flex: 1;
@@ -127,109 +127,105 @@ a {
   background-color: #f43f00;
 }
 
-/* =======================
-   TESTIMONIALS (FINAL)
-   ======================= */
+/* =====================================================
+   SECTIONS (ABOUT / SERVICES / CONTACT)
+   ===================================================== */
+
+.service_section {
+  background-color: #f9f8f7;
+}
+
+.about_section .detail-box a,
+.contact_section .form_container button {
+  background-color: #ff7241;
+  color: #ffffff;
+}
+
+.about_section .detail-box a:hover,
+.contact_section .form_container button:hover {
+  background-color: #f43f00;
+}
+
+/* =====================================================
+   TESTIMONIALS — FINAL & FIXED
+   ===================================================== */
 
 .testimonial_section {
   background: #f8f9fa;
   padding: 90px 0;
+  position: relative;
   overflow: hidden;
 }
 
+/* Marquee wrapper */
 .testimonial-marquee {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
+/* Moving track */
 .testimonial-track {
   display: flex;
   gap: 24px;
   width: max-content;
-  animation: testimonial-scroll 55s linear infinite;
+  animation: testimonial-scroll 60s linear infinite;
 }
 
+/* Individual cards */
 .testimonial_item {
   flex: 0 0 340px;
   max-width: 340px;
   min-height: 220px;
   background: #ffffff;
-  padding: 22px;
+  padding: 24px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
+/* Stars */
 .testimonial_item .stars {
   color: #f4b400;
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 
+/* Review text */
 .testimonial_item p {
   font-size: 14px;
   line-height: 1.5;
-  margin-bottom: 12px;
   color: #333;
+  margin-bottom: 12px;
 }
 
+/* Name */
 .testimonial_item h6 {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
 }
 
-.testimonial_item h6 span {
-  font-weight: 400;
-  color: #777;
-}
+.testimo
 
+/* CLEAN TESTIMONIAL MARQUEE */
+.testimonial_section { background:#f8f9fa; overflow:hidden; }
+.testimonial-marquee { overflow:hidden; width:100%; }
+.testimonial-track {
+  display:flex;
+  gap:24px;
+  width:max-content;
+  animation:testimonial-scroll 60s linear infinite;
+}
+.testimonial_item {
+  flex:0 0 320px;
+  max-width:320px;
+  min-height:220px;
+  background:#fff;
+  padding:22px;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
 @keyframes testimonial-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-/* Fade edges */
-.testimonial-marquee::before,
-.testimonial-marquee::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100px;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.testimonial-marquee::before {
-  left: 0;
-  background: linear-gradient(to right, #f8f9fa 0%, transparent 100%);
-}
-
-.testimonial-marquee::after {
-  right: 0;
-  background: linear-gradient(to left, #f8f9fa 0%, transparent 100%);
-}
-
-/* =======================
-   FOOTER
-   ======================= */
-
-.footer_section {
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.footer_section p {
-  color: #344d77;
-  padding: 25px 0;
-  margin: 0;
-}
-
-.footer_section p a {
-  color: inherit;
+  from { transform:translateX(0); }
+  to { transform:translateX(-50%); }
 }
