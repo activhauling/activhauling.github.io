@@ -289,3 +289,101 @@ a {
   right: 0;
   background: linear-gradient(to left, #f8f9fa 0%, transparent 100%);
 }
+
+/* ===========================
+   FIX: Testimonial Marquee
+   =========================== */
+
+.testimonial_section {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0;
+  background: #f8f9fa;
+}
+
+/* Marquee container */
+.testimonial-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Moving track */
+.testimonial-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: testimonial-scroll 60s linear infinite;
+}
+
+/* Individual cards */
+.testimonial_item {
+  flex: 0 0 360px;
+  max-width: 360px;
+  height: auto;
+  min-height: 220px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Text fixes */
+.testimonial_item p {
+  margin: 12px 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.testimonial_item h6 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.testimonial_item h6 span {
+  font-weight: normal;
+  color: #777;
+}
+
+/* Stars */
+.testimonial_item .stars {
+  color: #f4b400;
+  font-size: 14px;
+}
+
+/* Animation */
+@keyframes testimonial-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Fade edges (premium look) */
+.testimonial-marquee::before,
+.testimonial-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.testimonial-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #f8f9fa 0%, rgba(248,249,250,0) 100%);
+}
+
+.testimonial-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #f8f9fa 0%, rgba(248,249,250,0) 100%);
+}
+
