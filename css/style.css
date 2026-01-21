@@ -814,3 +814,40 @@ a:focus {
   from { transform:translateX(0); }
   to { transform:translateX(-50%); }
 }
+
+/* ==============================
+   FIX: Navbar visibility on sub pages
+   ============================== */
+
+/* Default navbar links (homepage stays white) */
+.custom_nav-container .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+/* Sub pages: make navbar text dark */
+.sub_page .custom_nav-container .navbar-nav .nav-link {
+  color: #0c0c0c;
+}
+
+/* Sub pages: hover + active state */
+.sub_page .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.sub_page .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: #ff7241;
+}
+
+/* Logo text on sub pages */
+.sub_page .navbar-brand span {
+  color: #0c0c0c;
+}
+
+/* Dropdown arrow visibility */
+.sub_page .navbar-nav .dropdown-toggle::after {
+  border-top-color: #0c0c0c;
+}
+
+/* Optional: subtle navbar background for sub pages */
+.sub_page .header_section {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
