@@ -1361,3 +1361,122 @@ a:focus {
     background-color: #1E1E1E !important;
   }
 }
+
+/* =====================================================
+   FINAL BRAND LOCK — BURGUNDY HEADER & FOOTER
+   Black / Charcoal Everywhere Else
+   Paste at END of style.css
+   ===================================================== */
+
+/* === BRAND COLORS ===
+   Burgundy: #7A1F2B
+   Burgundy Dark: #5F1821
+   Charcoal: #1E1E1E
+   =================== */
+
+/* ================= HEADER ================= */
+
+/* Header wrapper */
+.header_section,
+.header_bottom {
+  background-color: #7A1F2B !important;
+}
+
+/* Top contact bar (slightly darker burgundy) */
+.header_top {
+  background-color: #5F1821 !important;
+}
+
+/* Navbar (desktop + mobile) */
+.header_section .navbar,
+.header_section .navbar-collapse,
+.header_section .custom_nav-container {
+  background-color: transparent !important;
+}
+
+/* Nav links */
+.custom_nav-container .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+/* Hover + active */
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: #ffffff !important;
+}
+
+/* Underline stays visible */
+.custom_nav-container .navbar-nav .nav-link::after {
+  background-color: #ffffff;
+}
+
+/* ================= FOOTER ================= */
+
+.info_section {
+  background-color: #7A1F2B !important;
+}
+
+.info_section h4,
+.info_section p,
+.info_section a {
+  color: #ffffff;
+}
+
+/* Footer inputs */
+.info_section form input {
+  background-color: #5F1821 !important;
+  color: #ffffff;
+}
+
+.info_section form input::placeholder {
+  color: #f1f1f1;
+}
+
+/* Footer button */
+.info_section form button {
+  background-color: #1E1E1E;
+}
+
+.info_section form button:hover {
+  background-color: #121212;
+}
+
+/* ================= BODY / SECTIONS ================= */
+
+/* Dark neutral for cards & overlays */
+.client_section .box .detail-box,
+.dropdown-menu,
+.navbar-collapse {
+  background-color: #1E1E1E !important;
+}
+
+/* Hero overlay stays dark */
+.hero_bg_box::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 30, 30, 0.85),
+    rgba(30, 30, 30, 0.65)
+  ) !important;
+}
+
+/* Dropdown items */
+.dropdown-menu .dropdown-item {
+  color: #ffffff;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #2a2a2a;
+}
+
+/* ================= CAROUSEL ARROWS ================= */
+
+.client_section .owl-carousel .owl-nav .owl-prev,
+.client_section .owl-carousel .owl-nav .owl-next {
+  background-color: #7A1F2B !important;
+  color: #ffffff;
+}
+
+.client_section .owl-carousel .owl-nav .owl-prev:hover,
+.client_section .owl-carousel .owl-nav .owl-next:hover {
+  background-color: #5F1821 !important;
+}
