@@ -1233,3 +1233,38 @@ a:focus {
 .info_section {
   border-top: 1px solid rgba(255,255,255,0.08);
 }
+
+/* =====================================================
+   HOTFIX — RESTORE SLIDER + FORCE CHARCOAL HEADER
+   Paste at END of style.css
+   ===================================================== */
+
+/* === FIX 1: RESTORE HERO / SLIDER BACKGROUND IMAGE === */
+.slider_section {
+  background: none !important;
+}
+
+/* Keep the hero image visible */
+.hero_bg_box img {
+  display: block;
+}
+
+/* Dark neutral overlay (replaces blue tint) */
+.hero_bg_box::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 30, 30, 0.85),
+    rgba(30, 30, 30, 0.65)
+  ) !important;
+}
+
+/* === FIX 2: FORCE HEADER TO CHARCOAL (KILL BLUE) === */
+.header_section,
+.header_bottom {
+  background-color: #1E1E1E !important;
+}
+
+/* Top bar slightly darker */
+.header_top {
+  background-color: #141414 !important;
+}
