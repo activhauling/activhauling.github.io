@@ -1794,3 +1794,37 @@ a.btn:active {
   opacity: 1;
   transform: translateY(-3px);
 }
+
+/* =====================================================
+   FACTORING PAGE — SIDE PARTNERS LAYOUT
+   ===================================================== */
+
+.partners_side {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+
+.partners_side h4 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Tighter spacing for side layout */
+.partners_side .partner_card {
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.partners_side .partner_card img {
+  max-height: 48px;
+  margin-bottom: 10px;
+}
+
+/* Mobile spacing */
+@media (max-width: 991px) {
+  .partners_side {
+    padding: 25px;
+  }
+}
