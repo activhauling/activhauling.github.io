@@ -65,3 +65,52 @@ document.addEventListener("DOMContentLoaded", function () {
   // Run on scroll
   window.addEventListener("scroll", revealOnScroll);
 });
+
+/* =========================================
+   Simulated Social Proof (Homepage Only)
+   ========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Run only on homepage
+  if (!window.location.pathname.endsWith("index.html") &&
+      window.location.pathname !== "/" ) {
+    return;
+  }
+
+  const cities = [
+    "Atlanta, GA",
+    "Dallas, TX",
+    "Chicago, IL",
+    "Houston, TX",
+    "Phoenix, AZ",
+    "Los Angeles, CA",
+    "Newark, NJ",
+    "Columbus, OH"
+  ];
+
+  const counts = ["7+", "9+", "12+", "15+", "18+"];
+
+  const toast = document.getElementById("socialProof");
+  const text = document.getElementById("socialProofText");
+
+  if (!toast || !text) return;
+
+  function showSocialProof() {
+    const city = cities[Math.floor(Math.random() * cities.length)];
+    const count = counts[Math.floor(Math.random() * counts.length)];
+
+    text.innerText = `${count} people from ${city} are viewing this page`;
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 6000);
+  }
+
+  // Delay first appearance
+  setTimeout(showSocialProof, 3500);
+
+  // Repeat occasionally (not annoying)
+  setInterval(showSocialProof, 45000);
+});
