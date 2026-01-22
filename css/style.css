@@ -1850,3 +1850,19 @@ a.btn:active {
   transform: none !important;
   transition: none !important;
 }
+
+/* =====================================================
+   FINAL BRUTE-FORCE VISIBILITY FIX
+   ===================================================== */
+
+/* Kill reveal hiding everywhere */
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Kill reveal animations entirely */
+.reveal,
+.reveal.active {
+  transition: none !important;
+}
