@@ -1689,3 +1689,42 @@ a.btn:active {
 .contact_section button:hover {
   background-color: #5F1821 !important;
 }
+
+/* =====================================================
+   SOCIAL PROOF TOAST (SIMULATED, PREMIUM)
+   ===================================================== */
+
+.social-proof {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  background-color: rgba(122, 31, 43, 0.95); /* burgundy */
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+  max-width: 300px;
+}
+
+/* Visible state */
+.social-proof.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile tweak */
+@media (max-width: 576px) {
+  .social-proof {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    max-width: unset;
+    text-align: center;
+  }
+}
