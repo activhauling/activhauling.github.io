@@ -1839,3 +1839,14 @@ a.btn:active {
   opacity: 1 !important;
   transform: none !important;
 }
+
+/* =====================================================
+   FINAL SAFETY FIX — REVEAL ONLY ON HOMEPAGE
+   ===================================================== */
+
+/* On ALL sub pages, force content visible */
+.sub_page .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
