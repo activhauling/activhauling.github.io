@@ -1177,3 +1177,59 @@ a:focus {
 .client_section .owl-carousel .owl-nav .owl-next:hover {
   background-color: #5f1821 !important;
 }
+
+/* =====================================================
+   FINAL CLEANUP — REMOVE ALL BLUE, CHARCOAL + BURGUNDY
+   Paste at END of style.css
+   ===================================================== */
+
+/* === TESTIMONIAL CARDS === */
+.client_section .box .detail-box {
+  background-color: #1E1E1E !important;
+  border: none;
+}
+
+/* Testimonial text */
+.client_section .box .detail-box h5,
+.client_section .box .detail-box p {
+  color: #ffffff;
+}
+
+/* === HERO IMAGE OVERLAY (REMOVE BLUE TINT) === */
+.hero_bg_box::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 30, 30, 0.85),
+    rgba(30, 30, 30, 0.65)
+  ) !important;
+}
+
+/* === SUBSCRIBE INPUT (REMOVE BLUE) === */
+.info_section form input {
+  background-color: #242424 !important;
+  color: #ffffff;
+}
+
+/* Placeholder color */
+.info_section form input::placeholder {
+  color: #cccccc;
+}
+
+/* === REMOVE ANY REMAINING TEMPLATE BLUE === */
+.bg-primary,
+.text-primary {
+  background-color: #1E1E1E !important;
+  color: #ffffff !important;
+}
+
+/* === SECTION BACKGROUNDS THAT USED BLUE === */
+.service_section,
+.slider_section,
+.client_section {
+  background-color: #ffffff;
+}
+
+/* === FOOTER TOP BORDER / SEPARATORS === */
+.info_section {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
