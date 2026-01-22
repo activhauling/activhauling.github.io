@@ -1514,3 +1514,29 @@ a:focus {
 .header_bottom::after {
   content: none !important;
 }
+
+/* =====================================================
+   FINAL HEADER COLOR UNIFICATION
+   Single burgundy across entire header
+   Paste at END of style.css
+   ===================================================== */
+
+/* One unified header color */
+.header_section,
+.header_top,
+.header_bottom {
+  background-color: #7A1F2B !important;
+}
+
+/* Remove any previous darker override */
+.header_top {
+  border-bottom: none !important;
+}
+
+/* Ensure inner elements stay transparent */
+.header_bottom .container-fluid,
+.header_bottom .navbar,
+.header_bottom .navbar-collapse,
+.header_bottom .custom_nav-container {
+  background-color: transparent !important;
+}
