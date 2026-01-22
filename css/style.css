@@ -1572,3 +1572,26 @@ a:focus {
     padding: 10px 0 !important;
   }
 }
+
+/* =====================================================
+   PREMIUM SCROLL REVEAL ANIMATIONS
+   ===================================================== */
+
+/* Initial hidden state */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+/* When visible */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slight delay helpers (optional) */
+.reveal.delay-1 { transition-delay: 0.1s; }
+.reveal.delay-2 { transition-delay: 0.2s; }
+.reveal.delay-3 { transition-delay: 0.3s; }
