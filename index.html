@@ -489,6 +489,43 @@
 <div id="socialProof" class="social-proof">
   <span id="socialProofText"></span>
 </div>
+
+  <script>
+  const headlines = [
+    {
+      title: "Keep Your Trucks Moving",
+      text: "Dispatch, compliance, and back-office support built for owner-operators and fleets."
+    },
+    {
+      title: "Factoring That Improves Cash Flow",
+      text: "Get paid faster with trusted factoring partners and clean paperwork."
+    },
+    {
+      title: "ELD & Compliance Made Simple",
+      text: "Stay audit-ready with logs, safety, and authority protected."
+    }
+  ];
+
+  let index = 0;
+  const titleEl = document.getElementById("heroHeadline");
+  const textEl = document.getElementById("heroSubtext");
+
+  setInterval(() => {
+    index = (index + 1) % headlines.length;
+
+    titleEl.classList.remove("fade-in");
+    textEl.classList.remove("fade-in");
+
+    setTimeout(() => {
+      titleEl.textContent = headlines[index].title;
+      textEl.textContent = headlines[index].text;
+
+      titleEl.classList.add("fade-in");
+      textEl.classList.add("fade-in");
+    }, 300);
+  }, 4500);
+</script>
+
   
 </body>
 </html>
