@@ -6,6 +6,10 @@
   <meta name="description" content="Start your trucking company the right way. We assist with company setup, registrations, and compliance guidance.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -13,83 +17,64 @@
 </head>
 
 <body class="sub_page">
-  <!-- header section starts -->
-<header class="header_section">
-  <div class="header_top">
-    <div class="container-fluid ">
-      <div class="header_top_content">
 
+<!-- ================= HEADER ================= -->
+<header class="header_section">
+
+  <div class="header_top">
+    <div class="container-fluid">
+      <div class="header_top_content">
         <div class="contact_nav">
           <a href="tel:+12013777043">
-            <i class="fa fa-phone" aria-hidden="true"></i>
+            <i class="fa fa-phone"></i>
             <span>+1 (201) 377-7043</span>
           </a>
           <a href="mailto:admin@activhauling.com">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <i class="fa fa-envelope"></i>
             <span>admin@activhauling.com</span>
           </a>
         </div>
-
       </div>
     </div>
   </div>
 
   <div class="header_bottom">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand d-none d-lg-flex" href="/">
-          <img src="images/logo.png" alt="ActivHauling logo" style="height: 70px;">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="ActivHauling Logo" style="height:130px;">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""> </span>
+          data-target="#navbarSupportedContent">
+          <span></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
 
-            <!-- Services Dropdown -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"
-                 href="#"
-                 id="servicesDropdown"
-                 role="button"
-                 data-toggle="dropdown"
-                 aria-haspopup="true"
-                 aria-expanded="false">
+            <!-- SERVICES ACTIVE -->
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                 Services
               </a>
-
-              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                <a class="dropdown-item" href="dispatching.html">Dispatching – Trucking Services</a>
-                <a class="dropdown-item" href="factoring.html">Factoring Services</a>
-                <a class="dropdown-item" href="company-formation.html">Company Formation Services</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="dispatching.html">Dispatching</a>
+                <a class="dropdown-item" href="factoring.html">Factoring</a>
+                <a class="dropdown-item active" href="company-formation.html">Company Formation</a>
                 <a class="dropdown-item" href="back-office.html">Back Office Support</a>
                 <a class="dropdown-item" href="compliance.html">Compliance Assistance</a>
               </div>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="pricing.html">Pricing</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
           </ul>
         </div>
@@ -97,16 +82,15 @@
     </div>
   </div>
 </header>
-<!-- header section ends -->
+<!-- ================= END HEADER ================= -->
 
 
-<!-- HEADER -->
-
+<!-- ================= PAGE CONTENT ================= -->
 <section class="layout_padding">
   <div class="container">
 
     <p class="text-muted">
-      <a href="/">Home</a> → <a href="#">Services</a> → Company Formation Services
+      <a href="index.html">Home</a> → <a href="#">Services</a> → Company Formation Services
     </p>
 
     <h1 class="mb-4">Company Formation Services</h1>
@@ -138,18 +122,64 @@
 
   </div>
 </section>
+<!-- ================= END PAGE CONTENT ================= -->
 
-<!-- FOOTER -->
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
-  <!-- footer section -->
-<footer class="footer_section">
+<!-- ================= INFO FOOTER (RED BOX) ================= -->
+<section class="info_section layout_padding2">
   <div class="container">
+    <div class="row">
+
+      <!-- About -->
+      <div class="col-md-6 col-lg-3 info-col">
+        <h4>About</h4>
+        <p>
+          ActivHauling is a trucking dispatch and back-office support company
+          helping owner-operators and fleets operate efficiently and compliantly.
+          ActivHauling is a DBA of ActivTruckin LLC.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-6 col-lg-3 info-col">
+        <h4>Contact</h4>
+        <p>6108 Downing St, Parlin, NJ 08859</p>
+        <p>+1 (201) 377-7043</p>
+        <p>admin@activhauling.com</p>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="col-md-6 col-lg-3 info-col">
+        <h4>Subscribe</h4>
+        <form>
+          <input type="email" placeholder="Enter email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Social -->
+      <div class="col-md-6 col-lg-3 info-col">
+        <h4>Follow Us</h4>
+        <div class="info_social">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ================= END INFO FOOTER ================= -->
+
+
+<!-- ================= BOTTOM FOOTER ================= -->
+<footer class="footer_section">
+  <div class="container text-center">
     <p>
-      © <span id="displayYear"></span> ActivTruckin LLC, DBA ActivHauling. All Rights Reserved.
+      © <span id="displayYear"></span> ActivTruckin LLC, DBA ActivHauling.
+      All Rights Reserved.
     </p>
     <p>
       <a href="privacy.html">Privacy Policy</a> |
@@ -157,7 +187,14 @@
     </p>
   </div>
 </footer>
-<!-- footer section ends -->
+<!-- ================= END FOOTER ================= -->
+
+
+<!-- JS -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>
