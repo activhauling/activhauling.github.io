@@ -110,3 +110,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // Repeat occasionally (not annoying)
   setInterval(showSocialProof, 45000);
 });
+
+/* =========================================
+   Load Shared Footer
+   ========================================= */
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      const footer = document.getElementById("footer-placeholder");
+      if (footer) {
+        footer.innerHTML = data;
+      }
+    });
+});
