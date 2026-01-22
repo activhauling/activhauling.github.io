@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -21,27 +22,70 @@
   <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- HERO VIDEO FIX -->
+  <style>
+    .hero_area {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero_video_section {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .hero-bg-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      color: #fff;
+      padding-top: 40vh;
+    }
+
+    .header_section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+      background: transparent;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- ================= HERO VIDEO ================= -->
-<section class="hero_video_section">
+<!-- ================= HERO AREA ================= -->
+<div class="hero_area">
 
-  <video class="hero-bg-video" autoplay muted loop playsinline>
-    <source src="videos/truck-hero.mp4" type="video/mp4">
-  </video>
+  <!-- HERO VIDEO -->
+  <section class="hero_video_section">
+    <video class="hero-bg-video" autoplay muted loop playsinline>
+      <source src="videos/truck-hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
 
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content container text-center">
-    <h1>Keep Your Trucks Moving</h1>
-    <p>Dispatch, compliance, and back-office support built for owner-operators and fleets.</p>
-    <a href="signup.html" class="btn btn-primary btn-lg">Get Started</a>
-  </div>
-
-</section>
-
+    <div class="hero-content container text-center">
+      <h1>Keep Your Trucks Moving</h1>
+      <p>Dispatch, compliance, and back-office support built for owner-operators and fleets.</p>
+      <a href="signup.html" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+  </section>
 
   <!-- ================= HEADER ================= -->
   <header class="header_section">
@@ -78,15 +122,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
 
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
+              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown"
-                   role="button" data-toggle="dropdown">
-                  Services
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Services</a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="dispatching.html">Dispatching</a>
                   <a class="dropdown-item" href="factoring.html">Factoring</a>
@@ -96,21 +135,10 @@
                 </div>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="pricing.html">Pricing</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
             </ul>
           </div>
@@ -118,7 +146,10 @@
       </div>
     </div>
   </header>
-  <!-- ================= END HEADER ================= -->
+
+</div>
+<!-- ================= END HERO AREA ================= -->
+
 
   <!-- ================= SLIDER ================= -->
   <section class="slider_section">
