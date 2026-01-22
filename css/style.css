@@ -1304,3 +1304,30 @@ a:focus {
 .header_section .custom_nav-container {
   background-color: #1E1E1E !important;
 }
+
+/* =====================================================
+   ABSOLUTE FINAL FIX — HEADER BLUE STRIP
+   Targets wrapper + pseudo elements
+   Paste at END of style.css
+   ===================================================== */
+
+/* Kill background on header wrappers */
+.header_bottom,
+.header_bottom .container-fluid,
+.header_bottom .container-fluid::before,
+.header_bottom .container-fluid::after {
+  background-color: #1E1E1E !important;
+  background-image: none !important;
+}
+
+/* Ensure navbar inherits correctly */
+.header_bottom .navbar,
+.header_bottom .custom_nav-container {
+  background-color: transparent !important;
+}
+
+/* Safety: remove any pseudo overlays */
+.header_bottom::before,
+.header_bottom::after {
+  content: none !important;
+}
