@@ -1,291 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/fevicon.png" type="">
 
-  <title> ActivHauling </title>
+  <title>Our Services | ActivHauling</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
-  <!-- bootstrap core css -->
+  <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-  <!-- font awesome style -->
+  <!-- Font Awesome -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-  <!-- Custom styles for this template -->
+  <!-- Main CSS -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <style>
+    :root {
+      --brand-red: #7b1f2d;
+      --brand-black: #111111;
+    }
+
+    /* ===== HEADER ===== */
+    .brand-header {
+      background: var(--brand-red);
+      padding: 14px 0;
+    }
+
+    .brand-header .navbar-brand img {
+      width: 130px;
+      height: auto;
+    }
+
+    .brand-header .nav-link {
+      color: #000;
+      font-weight: 600;
+      margin-left: 20px;
+    }
+
+    .brand-header .nav-link:hover {
+      color: #fff;
+    }
+
+    /* ===== EQUAL HEIGHT SERVICE CARDS ===== */
+    .service_section .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .service_section .col-md-6,
+    .service_section .col-lg-4 {
+      display: flex;
+    }
+
+    .service_section .box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+
+    .service_section .detail-box {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  </style>
 </head>
 
 <body class="sub_page">
 
-  <div class="hero_area">
-    <div class="hero_bg_box">
-      <img src="images/slider-bg.jpg" alt="">
-    </div>
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="header_top">
-        <div class="container-fluid ">
-          <div class="header_top_content">
-            <a class="navbar-brand d-none d-lg-flex" href="index.html">
-  <img src="images/logo.png" alt="ActivHauling logo" style="height: 50px;">
-</a>
-
-            <div class="contact_nav">
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  +1 (201) 377-7043
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  admin@activhauling.com
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header_bottom">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand d-none d-lg-flex" href="index.html">
-  <img src="images/logo.png" alt="ActivHauling logo" style="height: 50px;">
-</a>
-
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="service.html">Services <span class="sr-only">(current)</span> </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-                </li>
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- end header section -->
-  </div>
-
-  <!-- service section -->
-
-  <section class="service_section layout_padding">
-    <div class="service_container">
-      <div class="container ">
-        <div class="heading_container">
-          <h2>
-            Our Services
-          </h2>
-          <p>
-            We offer a wide range of services including but not limited to
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mx-auto ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s1.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  24/7 Dispatch and Back Office Support
-                </h5>
-                <p>
-                  We manage load booking, rate negotiation, and route planning on your behalf. Our goal is to keep your trucks moving consistently while maximizing your revenue per mile.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mx-auto ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s2.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Driver Recruitment
-                </h5>
-                <p>
-                  We help carriers find reliable, qualified drivers that match their equipment and lanes. Our recruitment support reduces downtime and keeps your fleet staffed and productive.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mx-auto ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s3.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Factoring
-                </h5>
-                <p>
-                  We connect you with trusted factoring partners so you get paid quickly and reliably. Faster cash flow means fewer financial headaches and smoother day-to-day operations.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end service section -->
-
-  <!-- info section -->
-
-  <section class="info_section layout_padding2">
+  <!-- ================= HEADER ================= -->
+  <nav class="navbar navbar-expand-lg brand-header">
     <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="ActivHauling Logo">
+      </a>
+
+      <div class="collapse navbar-collapse show">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ================= END HEADER ================= -->
+
+  <!-- ================= SERVICES ================= -->
+  <section class="service_section layout_padding">
+    <div class="container">
+
+      <div class="heading_container heading_center mb-4">
+        <h2>Our Services</h2>
+        <p>Reliable support designed to keep your trucks moving and profitable</p>
+      </div>
+
       <div class="row">
-        <div class="col-md-6 col-lg-3 info-col">
-          <div class="info_detail">
-            <h4>
-              About
-            </h4>
-            <p>
-              ActivHauling is a trucking dispatch and logistics support company focused on helping owner-operators and carriers operate more efficiently. We provide reliable dispatching, load management, and operational support tailored to the needs of modern trucking businesses. ActivHauling is a registered “doing business as” (DBA) of ActivTruckin LLC.
-            </p>
-            <div class="info_social">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
+
+        <div class="col-md-6 col-lg-4 mx-auto mb-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s1.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>24/7 Dispatch & Back Office Support</h5>
+              <p>
+                We manage load booking, rate negotiation, and route planning to
+                maximize your revenue and keep trucks running consistently.
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 info-col">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  6108 Downing St, Parlin, NJ, 08859
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +1 (201) 377-7043
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  admin@activhauling.com
-                </span>
-              </a>
+
+        <div class="col-md-6 col-lg-4 mx-auto mb-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s2.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>Driver Recruitment</h5>
+              <p>
+                We assist carriers in finding qualified drivers aligned with
+                your equipment, lanes, and operational needs.
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 info-col">
-          <div class="info_contact">
-            <h4>
-              Subscribe
-            </h4>
-            <form action="#">
-              <input type="text" placeholder="Enter email" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info-col">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
+
+        <div class="col-md-6 col-lg-4 mx-auto mb-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s3.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>Factoring Assistance</h5>
+              <p>
+                We connect you with trusted factoring partners to improve
+                cash flow and reduce payment delays.
+              </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+  <!-- ================= END SERVICES ================= -->
 
-  <!-- end info section -->
-
-  <!-- footer section -->
+  <!-- ================= FOOTER ================= -->
   <footer class="footer_section">
     <div class="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By ActivTruckin, DBA ActivHauling
-        
+        &copy; <span id="displayYear"></span>
+        ActivTruckin LLC, DBA ActivHauling. All Rights Reserved.
       </p>
     </div>
   </footer>
-  <!-- footer section -->
 
-  <!-- jQery -->
+  <!-- JS -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
   <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
 
 </body>
-
-
 </html>
-
-
