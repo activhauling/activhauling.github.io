@@ -1595,3 +1595,20 @@ a:focus {
 .reveal.delay-1 { transition-delay: 0.1s; }
 .reveal.delay-2 { transition-delay: 0.2s; }
 .reveal.delay-3 { transition-delay: 0.3s; }
+
+/* =====================================================
+   PREMIUM CARD HOVER LIFT
+   ===================================================== */
+
+.service_section .box,
+.client_section .box,
+.pricing-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service_section .box:hover,
+.client_section .box:hover,
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.25);
+}
