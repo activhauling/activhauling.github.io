@@ -1888,3 +1888,24 @@ section,
   position: relative;
   z-index: 2;
 }
+
+/* =====================================================
+   FINAL FIX — DISABLE HERO OVERLAYS ON SUB PAGES
+   ===================================================== */
+
+/* Completely disable homepage hero on sub pages */
+.sub_page .hero_area,
+.sub_page .hero_bg_box,
+.sub_page .hero_bg_box::before,
+.sub_page .hero_bg_box::after {
+  display: none !important;
+}
+
+/* Ensure sub page content is fully interactive */
+.sub_page section,
+.sub_page .container,
+.sub_page .container-fluid,
+.sub_page .layout_padding {
+  position: relative;
+  z-index: 1;
+}
