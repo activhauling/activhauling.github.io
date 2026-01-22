@@ -97,3 +97,43 @@ body {
 }
 
 /* ================== KEEP EVERYTHING ELSE UNCHANGED ================== */
+
+/* =========================
+   HOME PAGE HEADER FIX
+   ========================= */
+
+/* Ensure header overlays hero correctly */
+body:not(.sub_page) .header_section {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+  border-bottom: none;
+}
+
+/* Navbar links on home page */
+body:not(.sub_page) .custom_nav-container .nav-link {
+  color: #ffffff;
+}
+
+/* Hover state */
+body:not(.sub_page) .custom_nav-container .nav-item:hover .nav-link {
+  color: var(--brand-accent);
+}
+
+/* =========================
+   HERO OVERLAY FIX (HOME PAGE)
+   ========================= */
+
+/* Force proper hero overlay for homepage */
+body:not(.sub_page) .hero_bg_box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.45)
+  );
+  z-index: 1;
+}
