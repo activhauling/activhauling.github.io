@@ -1866,3 +1866,25 @@ a.btn:active {
 .reveal.active {
   transition: none !important;
 }
+
+/* =====================================================
+   EMERGENCY OVERLAY KILL SWITCH
+   ===================================================== */
+
+/* Disable any full-page overlay blocking content */
+.hero_bg_box,
+.hero_bg_box::before,
+.hero_bg_box::after,
+.slider_section::before,
+.slider_section::after {
+  pointer-events: none !important;
+}
+
+/* Ensure main content is above overlays */
+section,
+.container,
+.container-fluid,
+.layout_padding {
+  position: relative;
+  z-index: 2;
+}
