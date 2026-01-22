@@ -900,3 +900,68 @@ a:focus {
   border-radius: 20px;
   font-size: 12px;
 }
+
+/* =====================================================
+   FINAL FIX: HEADER BACKGROUND + NAV VISIBILITY
+   Safe override — paste at END of style.css
+   ===================================================== */
+
+/* Entire header background */
+.header_section {
+  background-color: #0f172a; /* dark navy / near-black */
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* Top bar (phone + email) slightly darker */
+.header_top {
+  background-color: #020617;
+}
+
+/* Bottom navbar area */
+.header_bottom {
+  background-color: #0f172a;
+}
+
+/* Navbar links — ALWAYS visible */
+.custom_nav-container .navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* Hover + active state */
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: #ff7241 !important;
+}
+
+/* Dropdown menu background */
+.dropdown-menu {
+  background-color: #0f172a;
+  border: none;
+}
+
+/* Dropdown items */
+.dropdown-menu .dropdown-item {
+  color: #ffffff;
+}
+
+/* Dropdown hover */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #020617;
+  color: #ff7241;
+}
+
+/* Mobile menu background */
+.navbar-collapse {
+  background-color: #0f172a;
+}
+
+/* Hamburger icon stays visible */
+.custom_nav-container .navbar-toggler span,
+.custom_nav-container .navbar-toggler span::before,
+.custom_nav-container .navbar-toggler span::after {
+  background-color: #ffffff;
+}
