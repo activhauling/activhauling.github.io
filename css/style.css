@@ -1778,3 +1778,19 @@ a.btn:active {
   line-height: 1.6;
   color: #333;
 }
+
+/* =====================================================
+   PARTNER LOGO — GRAYSCALE TO COLOR (PREMIUM)
+   ===================================================== */
+
+.partner_card img {
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: filter 0.35s ease, opacity 0.35s ease, transform 0.35s ease;
+}
+
+.partner_card:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: translateY(-3px);
+}
