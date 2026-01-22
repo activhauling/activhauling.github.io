@@ -902,44 +902,44 @@ a:focus {
 }
 
 /* =====================================================
-   FINAL FIX: HEADER BACKGROUND + NAV VISIBILITY
-   Safe override — paste at END of style.css
+   BRAND FIX: Charcoal Header for Black + Burgundy Logo
+   Paste at END of style.css
    ===================================================== */
 
-/* Entire header background */
+/* Entire header */
 .header_section {
-  background-color: #0f172a; /* dark navy / near-black */
+  background-color: #121212; /* charcoal black */
   position: sticky;
   top: 0;
   z-index: 9999;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
-/* Top bar (phone + email) slightly darker */
+/* Top contact bar */
 .header_top {
-  background-color: #020617;
+  background-color: #0a0a0a;
 }
 
-/* Bottom navbar area */
+/* Bottom navbar */
 .header_bottom {
-  background-color: #0f172a;
+  background-color: #121212;
 }
 
-/* Navbar links — ALWAYS visible */
+/* Navbar links */
 .custom_nav-container .navbar-nav .nav-link {
   color: #ffffff !important;
   font-weight: 500;
 }
 
-/* Hover + active state */
+/* Hover / active */
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
   color: #ff7241 !important;
 }
 
-/* Dropdown menu background */
+/* Dropdown menu */
 .dropdown-menu {
-  background-color: #0f172a;
+  background-color: #1a1a1a;
   border: none;
 }
 
@@ -950,18 +950,20 @@ a:focus {
 
 /* Dropdown hover */
 .dropdown-menu .dropdown-item:hover {
-  background-color: #020617;
+  background-color: #2a2a2a;
   color: #ff7241;
 }
 
-/* Mobile menu background */
+/* Mobile menu */
 .navbar-collapse {
-  background-color: #0f172a;
+  background-color: #121212;
 }
 
-/* Hamburger icon stays visible */
+/* Hamburger icon */
 .custom_nav-container .navbar-toggler span,
 .custom_nav-container .navbar-toggler span::before,
 .custom_nav-container .navbar-toggler span::after {
   background-color: #ffffff;
 }
+
+
