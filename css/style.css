@@ -965,3 +965,83 @@ a:focus {
 .custom_nav-container .navbar-toggler span::after {
   background-color: #ffffff;
 }
+
+/* =====================================================
+   FINAL POLISH — BRAND, NAV UX, MICRO-INTERACTIONS
+   Safe to paste at END of style.css
+   ===================================================== */
+
+/* NAV LINK BASE */
+.custom_nav-container .navbar-nav .nav-link {
+  position: relative;
+  padding: 8px 20px;
+  font-weight: 500;
+}
+
+/* UNDERLINE ANIMATION */
+.custom_nav-container .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: #ff7241; /* accent */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Hover underline */
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link::after {
+  width: 60%;
+}
+
+/* Active page underline */
+.custom_nav-container .navbar-nav .nav-item.active .nav-link::after {
+  width: 70%;
+}
+
+/* Logo polish */
+.navbar-brand img {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+}
+
+/* Slight logo hover feedback (subtle) */
+.navbar-brand:hover img {
+  transform: scale(1.02);
+}
+
+/* Dropdown spacing */
+.dropdown-menu {
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Dropdown item spacing */
+.dropdown-menu .dropdown-item {
+  padding: 10px 22px;
+  font-size: 14px;
+}
+
+/* Dropdown hover polish */
+.dropdown-menu .dropdown-item:hover {
+  padding-left: 26px;
+}
+
+/* Mobile menu polish */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    padding: 15px 0;
+  }
+
+  .custom_nav-container .navbar-nav .nav-link {
+    padding: 12px 20px;
+  }
+
+  .custom_nav-container .navbar-nav .nav-link::after {
+    display: none; /* cleaner on mobile */
+  }
+}
