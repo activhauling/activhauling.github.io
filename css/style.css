@@ -1045,3 +1045,53 @@ a:focus {
     display: none; /* cleaner on mobile */
   }
 }
+
+/* =====================================================
+   FINAL BRAND LOCK — BURGUNDY ACCENT SYSTEM
+   Paste at END of style.css
+   ===================================================== */
+
+/* === BRAND VARIABLES (mental model) ===
+   Header / Footer Blue: #344D77
+   Burgundy Accent:      #7A1F2B
+====================================== */
+
+/* Navbar hover & active text */
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: #7A1F2B !important;
+}
+
+/* Underline animation (burgundy) */
+.custom_nav-container .navbar-nav .nav-link::after {
+  background-color: #7A1F2B;
+}
+
+/* Dropdown hover accent */
+.dropdown-menu .dropdown-item:hover {
+  color: #7A1F2B;
+}
+
+/* Buttons (site-wide polish, safe override) */
+.btn,
+.slider_section .detail-box a,
+.about_section .detail-box a,
+.contact_section .form_container button,
+.info_section form button {
+  background-color: #7A1F2B;
+}
+
+.btn:hover,
+.slider_section .detail-box a:hover,
+.about_section .detail-box a:hover,
+.contact_section .form_container button:hover,
+.info_section form button:hover {
+  background-color: #5f1821;
+}
+
+/* Icons hover (top contact bar & footer) */
+.header_top .contact_nav a:hover i,
+.info_section .info_contact .contact_link_box a:hover,
+.info_section .info_social a:hover {
+  color: #7A1F2B;
+}
