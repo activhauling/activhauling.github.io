@@ -1828,3 +1828,14 @@ a.btn:active {
     padding: 25px;
   }
 }
+
+/* =====================================================
+   SAFETY OVERRIDE — ENSURE CONTENT IS VISIBLE
+   On sub pages if JS fails
+   ===================================================== */
+
+/* Force reveal content visible on sub pages */
+.sub_page .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
