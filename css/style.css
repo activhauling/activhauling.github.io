@@ -1095,3 +1095,85 @@ a:focus {
 .info_section .info_social a:hover {
   color: #7A1F2B;
 }
+
+/* =====================================================
+   BRAND RESET — CHARCOAL + BURGUNDY (RECOMMENDED)
+   Paste at END of style.css
+   ===================================================== */
+
+/* Header & Footer base */
+.header_section,
+.info_section {
+  background-color: #1E1E1E !important;
+}
+
+/* Top bar slightly darker */
+.header_top {
+  background-color: #141414 !important;
+}
+
+/* Footer text */
+.info_section,
+.info_section p,
+.info_section a {
+  color: #ffffff;
+}
+
+/* Navbar links */
+.custom_nav-container .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+/* Hover & active */
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: #7A1F2B !important;
+}
+
+/* Underline animation */
+.custom_nav-container .navbar-nav .nav-link::after {
+  background-color: #7A1F2B;
+}
+
+/* Buttons */
+.btn,
+.slider_section .detail-box a,
+.about_section .detail-box a,
+.contact_section .form_container button,
+.info_section form button {
+  background-color: #7A1F2B;
+}
+
+.btn:hover,
+.slider_section .detail-box a:hover,
+.about_section .detail-box a:hover,
+.contact_section .form_container button:hover,
+.info_section form button:hover {
+  background-color: #5f1821;
+}
+
+/* Dropdowns */
+.dropdown-menu {
+  background-color: #242424;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #ffffff;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #2f2f2f;
+  color: #7A1F2B;
+}
+
+/* Owl Carousel arrows */
+.client_section .owl-carousel .owl-nav .owl-prev,
+.client_section .owl-carousel .owl-nav .owl-next {
+  background-color: #7A1F2B !important;
+  color: #ffffff;
+}
+
+.client_section .owl-carousel .owl-nav .owl-prev:hover,
+.client_section .owl-carousel .owl-nav .owl-next:hover {
+  background-color: #5f1821 !important;
+}
