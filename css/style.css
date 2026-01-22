@@ -2136,3 +2136,59 @@ section,
     transform: translateY(0);
   }
 }
+
+/* ================= HERO VIDEO FIX ================= */
+
+.hero_video_section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Video fills screen */
+.hero-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Dark overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+/* PERFECT CENTERING */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+
+  text-align: center;
+  color: #fff;
+
+  /* compensate for header height */
+  margin-top: 40px;
+}
+
+/* Typography polish */
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  max-width: 720px;
+  margin: 16px auto 28px;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
