@@ -1540,3 +1540,35 @@ a:focus {
 .header_bottom .custom_nav-container {
   background-color: transparent !important;
 }
+
+/* =====================================================
+   FINAL POLISH — HEADER SHADOW + HEIGHT BALANCE
+   Paste at END of style.css
+   ===================================================== */
+
+/* Subtle separation between header and hero */
+.header_section {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Reduce vertical height (desktop) */
+.header_top {
+  padding: 6px 0 !important;
+}
+
+.header_bottom {
+  padding: 8px 0 !important;
+}
+
+/* Keep navbar content vertically centered */
+.header_bottom .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Mobile balance (do not over-compress) */
+@media (max-width: 991px) {
+  .header_bottom {
+    padding: 10px 0 !important;
+  }
+}
