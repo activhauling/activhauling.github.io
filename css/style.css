@@ -1480,3 +1480,37 @@ a:focus {
 .client_section .owl-carousel .owl-nav .owl-next:hover {
   background-color: #5F1821 !important;
 }
+
+/* =====================================================
+   FINAL HEADER UNIFICATION — REMOVE BLACK STRIP
+   Makes entire header burgundy
+   Paste at END of style.css
+   ===================================================== */
+
+/* Force BOTH header layers to burgundy */
+.header_section,
+.header_top,
+.header_bottom {
+  background-color: #7A1F2B !important;
+}
+
+/* Slight hierarchy: top bar a touch darker */
+.header_top {
+  background-color: #5F1821 !important;
+}
+
+/* Ensure no inner container paints black */
+.header_bottom .container-fluid,
+.header_bottom .navbar,
+.header_bottom .navbar-collapse,
+.header_bottom .custom_nav-container {
+  background-color: transparent !important;
+}
+
+/* Safety: remove any pseudo backgrounds */
+.header_section::before,
+.header_section::after,
+.header_bottom::before,
+.header_bottom::after {
+  content: none !important;
+}
