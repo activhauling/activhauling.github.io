@@ -1283,3 +1283,24 @@ a:focus {
 .header_section .custom_nav-container {
   background-color: #1E1E1E !important;
 }
+
+/* =====================================================
+   DEFINITIVE FIX — FORCE NAVBAR TO CHARCOAL
+   Overrides Bootstrap navbar background
+   Paste at END of style.css
+   ===================================================== */
+
+/* Kill Bootstrap navbar background */
+.navbar {
+  background-color: transparent !important;
+}
+
+/* Force navbar inside header to charcoal */
+.header_section .navbar {
+  background-color: #1E1E1E !important;
+}
+
+/* Also force custom container to match */
+.header_section .custom_nav-container {
+  background-color: #1E1E1E !important;
+}
