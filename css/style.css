@@ -1268,3 +1268,18 @@ a:focus {
 .header_top {
   background-color: #141414 !important;
 }
+
+/* =====================================================
+   FINAL FIX — REMOVE BLUE NAV BAR STRIP
+   Paste at END of style.css
+   ===================================================== */
+
+/* Navbar container was still blue */
+.custom_nav-container {
+  background-color: transparent !important;
+}
+
+/* Ensure navbar inherits header color */
+.header_section .custom_nav-container {
+  background-color: #1E1E1E !important;
+}
