@@ -14,11 +14,36 @@
   <link href="css/responsive.css" rel="stylesheet" />
 
   <style>
-    /* Pricing Page Only – Safe Scoped Styles */
+    :root {
+      --brand-red: #7b1f2d;
+      --brand-black: #111111;
+      --brand-light: #f9f9f9;
+    }
 
+    /* ================= HEADER ================= */
+    .pricing-header {
+      background: var(--brand-red);
+      padding: 14px 0;
+    }
+
+    .pricing-header .navbar-brand img {
+      height: 42px;
+    }
+
+    .pricing-header .nav-link {
+      color: #000;
+      font-weight: 600;
+      margin-left: 18px;
+    }
+
+    .pricing-header .nav-link:hover {
+      color: #fff;
+    }
+
+    /* ================= PRICING ================= */
     .pricing-section {
       padding: 90px 0;
-      background: #f9f9f9;
+      background: var(--brand-light);
     }
 
     .pricing-title {
@@ -28,7 +53,7 @@
 
     .pricing-title h2 {
       font-weight: 700;
-      color: #111111;
+      color: var(--brand-black);
     }
 
     .pricing-title p {
@@ -37,165 +62,181 @@
     }
 
     .pricing-card {
-      background: #ffffff;
+      background: #fff;
       border-radius: 14px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
       padding: 35px 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
       height: 100%;
       display: flex;
       flex-direction: column;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      justify-content: space-between;
     }
 
-    .pricing-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-    }
-
-    .pricing-card h3 {
-      font-size: 22px;
+    .pricing-card h4 {
       font-weight: 700;
-      color: #7b1f2d;
+      color: var(--brand-black);
       margin-bottom: 10px;
     }
 
     .pricing-price {
-      font-size: 32px;
-      font-weight: 800;
-      color: #111111;
-      margin: 20px 0;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--brand-red);
+      margin: 15px 0;
     }
 
-    .pricing-price span {
-      font-size: 15px;
-      font-weight: 500;
-      color: #666;
-    }
-
-    .pricing-features {
+    .pricing-card ul {
+      padding-left: 0;
       list-style: none;
-      padding: 0;
-      margin: 25px 0 35px;
-      flex-grow: 1;
+      margin-bottom: 25px;
     }
 
-    .pricing-features li {
-      margin-bottom: 12px;
+    .pricing-card ul li {
+      margin-bottom: 10px;
       color: #333;
       font-size: 15px;
     }
 
-    .pricing-features li::before {
-      content: "✓";
-      color: #7b1f2d;
-      font-weight: bold;
-      margin-right: 10px;
+    .pricing-card ul li i {
+      color: var(--brand-red);
+      margin-right: 8px;
     }
 
-    .pricing-btn {
+    .pricing-card a {
       display: block;
       text-align: center;
-      padding: 14px 0;
-      border-radius: 8px;
-      background: #7b1f2d;
-      color: #ffffff;
+      padding: 12px;
+      background: var(--brand-red);
+      color: #fff;
       font-weight: 600;
-      text-decoration: none;
-      transition: background 0.25s ease;
-    }
-
-    .pricing-btn:hover {
-      background: #5f1622;
-      color: #ffffff;
+      border-radius: 8px;
       text-decoration: none;
     }
 
-    @media (max-width: 767px) {
-      .pricing-card {
-        margin-bottom: 30px;
-      }
+    .pricing-card a:hover {
+      background: #5f1722;
+    }
+
+    /* ================= FOOTER ================= */
+    .pricing-footer {
+      background: #fff;
+      padding: 35px 0;
+      text-align: center;
+      border-top: 1px solid #eee;
+    }
+
+    .pricing-footer p {
+      margin: 0;
+      color: #444;
+      font-size: 14px;
+    }
+
+    .pricing-footer a {
+      color: var(--brand-red);
+      margin: 0 10px;
+      font-weight: 500;
     }
   </style>
 </head>
 
-<body class="sub_page">
+<body>
 
-  <section class="pricing-section">
-    <div class="container">
-
-      <div class="pricing-title">
-        <h2>Dispatch Pricing</h2>
-        <p>Simple, transparent plans. No contracts. No hidden fees.</p>
-      </div>
-
-      <div class="row">
-
-        <!-- 1. Percentage Plan -->
-        <div class="col-md-4">
-          <div class="pricing-card">
-            <h3>Percentage Plan</h3>
-            <div class="pricing-price">
-              10% <span>per load</span>
-            </div>
-
-            <ul class="pricing-features">
-              <li>24/7 Back Office Support</li>
-              <li>Paperwork & Invoicing</li>
-              <li>Dedicated Dispatcher</li>
-              <li>HOS Compliance Monitoring</li>
-              <li>Safety Audit Assistance</li>
-              <li>Consistent Load Booking</li>
-            </ul>
-
-            <a href="contact.html" class="pricing-btn">Get Started</a>
-          </div>
-        </div>
-
-        <!-- 2. Weekly Plan -->
-        <div class="col-md-4">
-          <div class="pricing-card">
-            <h3>Weekly Flat Rate</h3>
-            <div class="pricing-price">
-              $300 <span>/ week</span>
-            </div>
-
-            <ul class="pricing-features">
-              <li>24/7 Back Office Support</li>
-              <li>Paperwork & Invoicing</li>
-              <li>Dedicated Dispatcher</li>
-              <li>HOS Compliance Monitoring</li>
-              <li>Safety Audit Assistance</li>
-              <li>Consistent Load Booking</li>
-            </ul>
-
-            <a href="contact.html" class="pricing-btn">Get Started</a>
-          </div>
-        </div>
-
-        <!-- 3. Monthly Plan -->
-        <div class="col-md-4">
-          <div class="pricing-card">
-            <h3>Monthly Flat Rate</h3>
-            <div class="pricing-price">
-              $1000 <span>/ month</span>
-            </div>
-
-            <ul class="pricing-features">
-              <li>24/7 Back Office Support</li>
-              <li>Paperwork & Invoicing</li>
-              <li>Dedicated Dispatcher</li>
-              <li>HOS Compliance Monitoring</li>
-              <li>Safety Audit Assistance</li>
-              <li>Consistent Load Booking</li>
-            </ul>
-
-            <a href="contact.html" class="pricing-btn">Get Started</a>
-          </div>
-        </div>
-
-      </div>
+<!-- ================= HEADER ================= -->
+<nav class="navbar navbar-expand-lg pricing-header">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="ActivHauling Logo">
+    </a>
+    <div class="collapse navbar-collapse show">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
-  </section>
+  </div>
+</nav>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing-section">
+  <div class="container">
+    <div class="pricing-title">
+      <h2>Simple & Transparent Pricing</h2>
+      <p>Choose a plan that fits your operation. No contracts. Cancel anytime.</p>
+    </div>
+
+    <div class="row">
+
+      <!-- Percentage Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="pricing-card">
+          <div>
+            <h4>Percentage Plan</h4>
+            <div class="pricing-price">10% Per Load</div>
+            <ul>
+              <li><i class="fa fa-check"></i> Dedicated Dispatcher</li>
+              <li><i class="fa fa-check"></i> Consistent Load Booking</li>
+              <li><i class="fa fa-check"></i> 24/7 Back Office Support</li>
+              <li><i class="fa fa-check"></i> Paperwork Handling</li>
+              <li><i class="fa fa-check"></i> HOS Compliance</li>
+              <li><i class="fa fa-check"></i> Safety Audit Assistance</li>
+            </ul>
+          </div>
+          <a href="signup.html">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Weekly Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="pricing-card">
+          <div>
+            <h4>Weekly Flat Rate</h4>
+            <div class="pricing-price">$300 / Week</div>
+            <ul>
+              <li><i class="fa fa-check"></i> Dedicated Dispatcher</li>
+              <li><i class="fa fa-check"></i> Consistent Load Booking</li>
+              <li><i class="fa fa-check"></i> 24/7 Back Office Support</li>
+              <li><i class="fa fa-check"></i> Paperwork Handling</li>
+              <li><i class="fa fa-check"></i> HOS Compliance</li>
+              <li><i class="fa fa-check"></i> Safety Audit Assistance</li>
+            </ul>
+          </div>
+          <a href="signup.html">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Monthly Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="pricing-card">
+          <div>
+            <h4>Monthly Flat Rate</h4>
+            <div class="pricing-price">$1,000 / Month</div>
+            <ul>
+              <li><i class="fa fa-check"></i> Dedicated Dispatcher</li>
+              <li><i class="fa fa-check"></i> Consistent Load Booking</li>
+              <li><i class="fa fa-check"></i> 24/7 Back Office Support</li>
+              <li><i class="fa fa-check"></i> Paperwork Handling</li>
+              <li><i class="fa fa-check"></i> HOS Compliance</li>
+              <li><i class="fa fa-check"></i> Safety Audit Assistance</li>
+            </ul>
+          </div>
+          <a href="signup.html">Get Started</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="pricing-footer">
+  <p>
+    © ActivTruckin LLC, DBA ActivHauling. All Rights Reserved.<br>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a>
+  </p>
+</footer>
 
 </body>
 </html>
