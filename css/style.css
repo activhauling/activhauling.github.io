@@ -1909,3 +1909,129 @@ section,
   position: relative;
   z-index: 1;
 }
+
+/* ================= PRICING PREVIEW ================= */
+.pricing-preview-section {
+  padding: 100px 0;
+  background: #f9f9f9;
+}
+
+.pricing-preview-box {
+  background: #1b1b1b;
+  border-radius: 22px;
+  padding: 70px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-center {
+  text-align: center;
+  max-width: 420px;
+}
+
+.pricing-center h2 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.pricing-center p {
+  color: #d0d0d0;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.pricing-btn-main {
+  background: #7b1f2d;
+  padding: 12px 28px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.pricing-btn-main:hover {
+  background: #5f1722;
+  color: #fff;
+}
+
+/* CARDS */
+.pricing-card {
+  background: #fff;
+  color: #111;
+  width: 260px;
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.pricing-card h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.pricing-card h2 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #7b1f2d;
+}
+
+.price-sub {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 22px;
+}
+
+.pricing-card ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.pricing-btn-outline {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #7b1f2d;
+  border-radius: 25px;
+  color: #7b1f2d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pricing-btn-outline:hover {
+  background: #7b1f2d;
+  color: #fff;
+}
+
+/* ANGLED EFFECT */
+.preview-left {
+  transform: rotate(-6deg);
+}
+
+.preview-right {
+  transform: rotate(6deg);
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .pricing-preview-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .preview-left,
+  .preview-right {
+    transform: none;
+  }
+}
