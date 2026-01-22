@@ -71,11 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
    ========================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Run only on homepage
-  if (!window.location.pathname.endsWith("index.html") &&
-      window.location.pathname !== "/" ) {
-    return;
-  }
+
 
   const cities = [
     "Atlanta, GA",
