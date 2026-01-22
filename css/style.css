@@ -1331,3 +1331,33 @@ a:focus {
 .header_bottom::after {
   content: none !important;
 }
+
+/* =====================================================
+   DEFINITIVE FIX — BOOTSTRAP NAVBAR-COLLAPSE BLUE
+   Works on desktop + mobile
+   Paste at END of style.css
+   ===================================================== */
+
+/* Kill Bootstrap collapse background everywhere */
+.navbar-collapse {
+  background-color: transparent !important;
+}
+
+/* Force correct background when inside header */
+.header_section .navbar-collapse {
+  background-color: #1E1E1E !important;
+}
+
+/* Ensure desktop nav stays clean */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    background-color: transparent !important;
+  }
+}
+
+/* Ensure mobile dropdown matches header */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #1E1E1E !important;
+  }
+}
